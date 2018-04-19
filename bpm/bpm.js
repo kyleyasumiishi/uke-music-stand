@@ -41,7 +41,6 @@ function update_bpm() {
         start = Date.now();
     } else {
         current_click_time = Date.now() - start;
-        console.log("The TIME is ", current_click_time / 1000, " seconds");
         total_clicks += 1;
         current_bpm = calc_current_bpm();
         average_bpm = calc_average_bpm();
@@ -71,3 +70,6 @@ function reset() {
     document.getElementById("current").innerHTML = "Current: " + current_bpm;
     document.getElementById("average").innerHTML = "Average: " + average_bpm;
 }
+
+
+
